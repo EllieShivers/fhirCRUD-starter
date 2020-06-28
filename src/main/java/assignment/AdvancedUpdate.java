@@ -17,7 +17,7 @@ public class AdvancedUpdate {
     private IGenericClient client = null;
 
     public AdvancedUpdate(String baseUrl) {
-        FhirContext ctx = FhirContext.forDstu3();
+        FhirContext ctx = FhirContext.forR4();
         client = ctx.newRestfulGenericClient(baseUrl);
     }
 
